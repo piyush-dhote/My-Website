@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" class="resume-button glow-button">View Resume</a>
+    </nav>
+  </header>
+
+  <!-- Landing Section -->
+  <main class="landing">
+    <div class="image">
+      <img src="avatar.png" alt="Web Developer Avatar" />
+    </div>
+    <div class="content">
+      <p class="intro">Hi, I am Piyush Dhote</p>
+      <h1><span>Web</span><br/>Developer</h1>
+      <p class="desc">A web developer that builds dream like websites for your business.</p>
+    </div>
+   
+  </main>
+
+  <!-- Project Section -->
+  <section class="projects" id="projects">
+    <h2>PROJECT</h2>
+    <div class="project-grid">
+<a href="project1.html" class="project-card">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  <span class="read-more"></span>
+</a>
+
+      <a href="project2.html" class="project-card">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  <span class="read-more"></span>
+</a>
+      <a href="project3.html" class="project-card">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  <span class="read-more"></span>
+</a>
+      <a href="project4.html" class="project-card">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  <span class="read-more"></span>
+</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>CONTACT</h2>
+    <p>Email: <a href="piyussh.dhote@gmail.com">piyussh.dhote@gmail.com</a></p>
+    <a class="linkedin-button" href="https://www.linkedin.com/in/piyush-dhote/" target="_blank">
+      <img src="linkedin-icon.png" alt="LinkedIn" />
+      
+    </a>
+    <p>Phone: +91-7822056304</p>
+  </section>
+
+  <script>
+  function toggleReadMore(btn) {
+    const card = btn.closest('.project-card');
+    card.classList.toggle('expanded');
+    btn.textContent = card.classList.contains('expanded') ? 'Read Less' : 'Read More';
+  }
+</script>
+
+
+</body>
+</html>
