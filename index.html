@@ -1,130 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harroz</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" href="favicon.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduate Trainee Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul id="navItems">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="section home-flex">
-    <div class="avatar-container">
-      <img src="avatar.png" alt="My Avatar" class="avatar-image" />
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.pdf" class="resume-button glow-button">View Resume</a>
+        </nav>
+    </header>
 
-    <div class="intro-text">
-      <div class="intro-box">
-        <h1>Hello, I'm</h1>
-        <h1 class="name">Piyush Dhote</h1>
-        <p>An aspiring and inquisitive Computer Science professional.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Landing Section -->
+    <main class="landing">
+        <div class="image">
+            <img src="avatar.png" alt="My Avatar" />
+        </div>
+        <div class="content">
+            <p class="intro">Hi, I am Piyush Dhote</p>
+            <h1>An aspiring and inquisitive Computer Science professional.</h1>
+            <p class="desc">I apply strong problem-solving and DSA fundamentals to build efficient, data-driven solutions using <strong>Python, C++ and SQL</strong>.</p>
+        </div>
 
-  <!-- About Section -->
-  <section id="about" class="section about-box">
-    <h2 class="section-heading">About Me</h2>
-    <div class="info-grid">
-      <div class="info-block">
-        <span class="info-title">👋 Hello!</span>
-        <p class="info-detail"><strong>Piyush Dhote</strong>, 4th-year B.Tech student at <strong>SIT Lonavala</strong>, specializing in <strong>Computer Science</strong>.</p>
-      </div>
-      <div class="info-block">
-        <span class="info-title">💻 What I Do</span>
-        <p class="info-detail">I apply strong problem-solving and DSA fundamentals to build efficient, data-driven solutions using <strong>Python, C++ and SQL</strong>.</p>
-      </div>
-      <div class="info-block">
-        <span class="info-title">📣 My Roles</span>
-        <p class="info-detail">Secretary at <strong>Career Counselling Centre Club, SIT</strong>.</p>
-      </div>
-      <div class="info-block">
-        <span class="info-title">🔍 Looking Ahead</span>
-        <p class="info-detail">Seeking opportunities to contribute to impactful projects in a dynamic environment while enhancing technical expertise and gaining valuable industry exposure.</p>
-      </div>
-      <div class="info-block">
-        <span class="info-title">🛠️ Skills</span>
-        <p class="info-detail">Python, C++, SQL, Content Creation(Canva), Project Management, Teamwork & Collaboration, Communication, Organizational Skills.</p>
-      </div>
-    </div>
-  </section>
+    </main>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2>PROJECT</h2>
-    <div class="project-grid">
-<a href="project1.html" class="project-card">
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-  <span class="read-more"></span>
-</a>
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+        <h2>PROJECT</h2>
+        <div class="project-grid">
+            <a href="project1.html" class="project-card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <span class="read-more"></span>
+            </a>
 
-      <a href="project2.html" class="project-card">
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-  <span class="read-more"></span>
-</a>
-      <a href="project3.html" class="project-card">
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-  <span class="read-more"></span>
-</a>
-      <a href="project4.html" class="project-card">
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-  <span class="read-more"></span>
-</a>
-    </div>
-  </section>
+            <a href="project2.html" class="project-card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <span class="read-more"></span>
+            </a>
+            <a href="project3.html" class="project-card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <span class="read-more"></span>
+            </a>
+            <a href="project4.html" class="project-card">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                <span class="read-more"></span>
+            </a>
+        </div>
+    </section>
 
-  <!-- Contact Me Section -->
-  <section id="contact" class="section">
-    <h2 class="section-heading">Contact Me</h2>
-    <form action="https://formspree.io/f/mvgrbeyd" method="POST" class="contact-form" onsubmit="handleSubmit(event)">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>CONTACT</h2>
+        <p>Email: <a href="piyussh.dhote@gmail.com">piyussh.dhote@gmail.com</a></p>
+        <a class="linkedin-button" href="https://www.linkedin.com/in/piyush-dhote/" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn" />
 
-    <p id="successMessage" style="display:none; color: orange; margin-top: 1.5rem; font-weight: bold;">
-      ✅ Your message has been sent!
-    </p>
-  </section>
+        </a>
+        <p>Phone: +91-7822056304</p>
+    </section>
 
-  <!-- Social Buttons -->
-  <div class="social-buttons">
-    <a href="https://www.linkedin.com/in/piyush-dhote/" target="_blank" class="social-btn">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-    </a>
-    <a href="https://www.instagram.com/piyussh.dhote/" target="_blank" class="social-btn">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-    </a>
-  </div>
+    <script>
+        function toggleReadMore(btn) {
+            const card = btn.closest('.project-card');
+            card.classList.toggle('expanded');
+            btn.textContent = card.classList.contains('expanded') ? 'Read Less' : 'Read More';
+        }
+    </script>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>
-  📧 <a href="mailto:piyussh.dhote@gmail.com" style="color: orange; text-decoration: underline;">laukikc9765@gmail.com</a>
-</p>
 
-  </footer>
-
-  <!-- Scripts -->
-  <canvas id="cursorCanvas"></canvas>
-  <script src="cursor-effect.js"></script>
-  <script src="script.js"></script>
 </body>
+
 </html>
