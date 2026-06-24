@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Piyush Dhote | Aspiring Data Scientist · Data Science Graduate · ML Enthusiast</title>
+    <meta name="title" content="Piyush Dhote | Aspiring Data Scientist · Data Science Graduate · ML Enthusiast">
+    <meta name="description"
+        content="Final-year / recent graduate passionate about data science, machine learning, and turning data into insights. Actively looking for entry-level data science roles and internships.">
+    <meta name="keywords"
+        content="aspiring data scientist, data science fresher, machine learning student, entry level data scientist, data science portfolio, Python, SQL, machine learning projects, data science intern, fresher data science, data analytics graduate">
+    <meta name="author" content="Piyush Dhote">
+    <link rel="canonical" href="https://yourwebsite.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:title" content="Piyush Dhote — Data Science Portfolio">
+    <meta property="og:description"
+        content="Explore my data science projects, skills, and academic background. Actively seeking entry-level opportunities.">
+    <meta property="og:image" content="og-cover.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com">
+    <meta property="twitter:title" content="Piyush Dhote — Data Science Portfolio">
+    <meta property="twitter:description"
+        content="Explore my data science projects, skills, and academic background. Actively seeking entry-level opportunities.">
+    <meta property="twitter:image" content="og-cover.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data for Person & Portfolio -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Piyush Dhote",
+      "url": "https://yourwebsite.com",
+      "jobTitle": "Aspiring Data Scientist",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Sinhgad Institute of Technology, Lonavala, Maharashtra"
+      },
+      "knowsAbout": [
+        "Data Science",
+        "Machine Learning",
+        "Python Programming",
+        "SQL",
+        "Predictive Modeling",
+        "Data Analytics"
+      ],
+      "sameAs": [
+        "https://github.com/piyushdhote",
+        "https://linkedin.com/in/piyushdhote",
+        "https://x.com/piyushdhote"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-code">&lt;</span>Piyush Dhote<span class="logo-code">&nbsp;/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Landing Section -->
+    <section id="hero" class="hero-section">
+        <!-- Particle Canvas -->
+        <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+        <div class="hero-content container">
+            <p class="hero-intro">// Hello World, I'm an aspiring data scientist</p>
+            <h1 class="hero-title">
+                <span class="headline-typewriter" id="headline-typewriter"></span>
+                <span class="cursor">&nbsp;</span>
+            </h1>
+            <p class="hero-subheadline">
+                I'm Piyush Dhote — a data science enthusiast and recent graduate from Savitribai Phule Pune University
+                (SPPU), turning curiosity about data into real projects. Currently looking for my first data science
+                role or internship.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">See My Projects <i class="fas fa-arrow-down"></i></a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect <i class="fas fa-paper-plane"></i></a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// about.me</p>
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead-text">
+                        Hi, I'm Piyush Dhote — a recent graduate in Computer Engineering from Savitribai Phule Pune
+                        University (SPPU), based in Pune, Maharashtra.
+                    </p>
+                    <p>
+                        I've been genuinely fascinated by data science since <!-- Replace with reason -->[brief honest
+                        reason — e.g., "I stumbled into a Kaggle competition during my second year and got hooked" or
+                        "my final year project on predicting crop yields made me realise how powerful ML can be"].
+                    </p>
+                    <p>
+                        Right now, I'm building my foundation — working through real datasets, completing hands-on
+                        projects, and getting comfortable with the tools that matter in the field: Python, Pandas, SQL,
+                        Scikit-learn, and data visualisation. I'm not an expert yet, but I learn fast, I document
+                        everything on GitHub, and I'm not afraid of messy data.
+                    </p>
+                    <p>
+                        My focus areas are <!-- Replace with focus areas -->[pick 1–2: e.g., "machine learning and data
+                        analytics" / "NLP and text data" / "data visualisation and business intelligence"]. I'm actively
+                        working to bridge the gap between academic knowledge and real-world data problems.
+                    </p>
+                    <div class="about-highlight">
+                        <i class="fas fa-search-dollar highlight-icon"></i>
+                        <p>I'm currently looking for entry-level data science roles, data analyst positions, or
+                            internships where I can contribute, learn from experienced teams, and grow into the field
+                            properly.</p>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="photo-frame">
+                        <img src="PP.jpg" alt="Piyush Dhote" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section id="skills" class="skills-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// skills.stack</p>
+            <h2 class="section-title">Skills & Tech Stack</h2>
+            <p class="section-subtitle">A realistic overview of tools and concepts I have worked with. Grounded in
+                projects and coursework.</p>
+
+            <div class="skills-grid">
+                <!-- Skill Category: Languages -->
+                <!-- Skill Category: Languages -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fas fa-code category-icon"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-dot"></span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">C++</span>
+                            <span class="skill-dot"></span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-dot"></span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Data Analysis & ML Libraries -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line category-icon"></i>
+                        <h3>Libraries & Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Pandas</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">NumPy</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Databases -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fas fa-database category-icon"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Tools & Platforms -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fas fa-tools category-icon"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Streamlit Cloud</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Railway</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Canva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Core Concepts -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fas fa-brain category-icon"></i>
+                        <h3>Core CS Concepts</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Data Structures & Algorithms</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Object-Oriented Programming</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Operating System</span>
+                        </div>
+                        <div class="skill-tag badge-comfortable" data-level="Comfortable">
+                            <span class="skill-name">Cloud Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Soft Skills -->
+                <div class="skills-category-card highlighted-card">
+                    <div class="category-header">
+                        <i class="fas fa-user-friends category-icon text-glow"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag learning-badge" data-level="High Proficiency">
+                            <span class="skill-name">Teamwork & Collaboration</span>
+                        </div>
+                        <div class="skill-tag learning-badge" data-level="High Proficiency">
+                            <span class="skill-name">Communication</span>
+                        </div>
+                        <div class="skill-tag learning-badge" data-level="High Proficiency">
+                            <span class="skill-name">Organizational Skills</span>
+                        </div>
+                        <div class="skill-tag learning-badge" data-level="High Proficiency">
+                            <span class="skill-name">Time Management</span>
+                        </div>
+                        <div class="skill-tag learning-badge" data-level="High Proficiency">
+                            <span class="skill-name">Adaptability</span>
+                        </div>
+                        <div class="skill-tag learning-badge" data-level="High Proficiency">
+                            <span class="skill-name">Multi-tasking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Internships Section -->
+    <section id="experience" class="experience-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// work.log</p>
+            <h2 class="section-title">Internships & Experience</h2>
+
+            <div class="timeline">
+
+                <!-- ACES Leadership Role -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot-accent"></div>
+                    <div class="timeline-date">🗓 Sept. 2024 - Aug. 2025</div>
+                    <div class="timeline-content highlight-timeline-card">
+                        <span class="experience-type-tag">Leadership</span>
+                        <h3 class="experience-title">Technical Co-Head</h3>
+                        <h4 class="experience-company"><i class="fas fa-users"></i> Association of Computer Engineering
+                            Students (ACES), SIT Lonavala</h4>
+                        <ul class="experience-bullets">
+                            <li>Organized and led technical events and competitions, fostering a highly collaborative
+                                environment for students.</li>
+                            <li>Contributed actively to strategic decision-making, team coordination, and various
+                                initiatives to enhance the club's technical expertise.</li>
+                        </ul>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Leadership</span>
+                            <span class="tech-tag">Event Organization</span>
+                            <span class="tech-tag">Team Coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CCC Leadership Role -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">🗓 Sept. 2023 - Aug. 2025</div>
+                    <div class="timeline-content">
+                        <span class="experience-type-tag">Management</span>
+                        <h3 class="experience-title">Secretary / Joint Secretary / Treasurer</h3>
+                        <h4 class="experience-company"><i class="fas fa-briefcase"></i> Career Counseling Center Club,
+                            SIT Lonavala</h4>
+                        <ul class="experience-bullets">
+                            <li>Served as Secretary (Mar 2025 – Aug 2025), Joint Secretary (Jan 2024 – Feb 2025), and
+                                Treasurer (Sept 2023 – Dec 2023).</li>
+                            <li>Maintained accurate organization records, managed financial transactions, handled bill
+                                payments, and kept detailed meeting minutes.</li>
+                            <li>Managed a comprehensive membership list and collaborated closely with the executive
+                                committee to ensure operational and fiscal transparency.</li>
+                        </ul>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Financial Management</span>
+                            <span class="tech-tag">Operations</span>
+                            <span class="tech-tag">Record Keeping</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="experience-empty-note">
+                <i class="fas fa-info-circle"></i>
+                <p>Note: As an entry-level professional, I back my zero or minimal formal corporate experience with
+                    strong academic performance, hands-on self-directed projects, and verifiable certifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// education.path</p>
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background showing structural knowledge in computer science,
+                statistics, and mathematics.</p>
+
+            <div class="timeline">
+                <!-- Major Degree -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot-accent"></div>
+                    <div class="timeline-date">🗓 2022 – 2026</div>
+                    <div class="timeline-content highlight-timeline-card">
+                        <span class="education-gpa-tag">CGPA: 7.25 / 10</span>
+                        <h3 class="education-degree">Bachelor of Engineering in Computer Science & Engineering</h3>
+                        <h4 class="education-school"><i class="fas fa-university"></i> Sinhgad Institute of Technology,
+                            Lonavala, Maharashtra</h4>
+
+                        <div class="coursework-box">
+                            <h5>Relevant Coursework</h5>
+                            <p>Data Structures & Algorithms, Object-Oriented Programming (OOP), Operating Systems,
+                                Database Management Systems (MySQL, PostgreSQL), Cloud Computing, and Software
+                                Engineering.</p>
+                        </div>
+
+                        <div class="education-project-box">
+                            <h5><i class="fas fa-project-diagram"></i> Key Project Portfolio</h5>
+                            <p>Built semantic application platforms, including **BookMate** (semantic book recommender
+                                using Sentence Transformers & ChromaDB) and **Smart Resume Analyzer** (NLP matching app
+                                using Cosine Similarity & Streamlit).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12th Standard -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">🗓 2020 – 2022</div>
+                    <div class="timeline-content">
+                        <span class="education-gpa-tag">Percentage: 78.83%</span>
+                        <h3 class="education-degree">HSC (Science)</h3>
+                        <h4 class="education-school"><i class="fas fa-school"></i> R. S. Bidkar College, Hinganghat,
+                            Maharashtra</h4>
+                        <p class="education-details">Focused on Mathematics, Physics, Chemistry, and Computer Science
+                            foundation subjects.</p>
+                    </div>
+                </div>
+
+                <!-- 10th Standard -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">🗓 2019 – 2020</div>
+                    <div class="timeline-content">
+                        <span class="education-gpa-tag">Percentage: 84.20%</span>
+                        <h3 class="education-degree">SSC</h3>
+                        <h4 class="education-school"><i class="fas fa-school"></i> St. John’s High School, Hinganghat,
+                            Maharashtra</h4>
+                        <p class="education-details">Acquired high-grade performance across general mathematics,
+                            science, and languages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// projects.built</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Real-world data problems resolved using clean code, rigorous testing, and modern
+                cloud deployment.</p>
+            <div class="projects-grid">
+
+                <!-- Project 1: BookMate -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-domain-tag">Semantic Recommendation / NLP</span>
+                        <span class="project-type-tag">Personal / AI</span>
+                    </div>
+                    <h3 class="project-title">BookMate</h3>
+                    <p class="project-description">
+                        Created a semantic book recommendation app using Hugging Face Sentence Transformers. Integrated
+                        mood detection for emotionally aware suggestions using pretrained sentiment models. Archives and
+                        retrieves ChromaDB embeddings for fast vector-based semantic search. Developed an interactive
+                        Gradio front-end with real-time query handling, using LangChain and Pandas for text
+                        pre-processing and structured data loading.
+                    </p>
+                    <div class="project-learning">
+                        <h4><i class="fas fa-lightbulb"></i> What I Learned:</h4>
+                        <p>How to utilize Sentence Transformers vector embeddings, fast similarity indexing using vector
+                            databases (ChromaDB), and designing interactive NLP web UIs with Gradio.</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Sentence Transformers</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">Gradio</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/piyushdhote" target="_blank" rel="noopener"
+                            class="btn btn-icon-only" aria-label="GitHub Repository"><i class="fab fa-github"></i>
+                            GitHub</a>
+                        <a href="https://huggingface.co/spaces" target="_blank" rel="noopener" class="btn btn-icon-only"
+                            aria-label="Hugging Face Space"><i class="fas fa-rocket"></i> Space Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Smart Resume Analyzer -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-domain-tag">NLP / Matcher</span>
+                        <span class="project-type-tag">Personal / AI</span>
+                    </div>
+                    <h3 class="project-title">Smart Resume Analyzer</h3>
+                    <p class="project-description">
+                        Developed an NLP-powered application using TF-IDF vectorization and cosine similarity to match
+                        resumes with job descriptions, achieving 90%+ relevance scoring accuracy. Parsed PDF and DOCX
+                        files using PyPDF2 and docx2txt, preprocessed text using NLTK, and built an intuitive Streamlit
+                        UI to deliver real-time match scores and improvement suggestions.
+                    </p>
+                    <div class="project-learning">
+                        <h4><i class="fas fa-lightbulb"></i> What I Learned:</h4>
+                        <p>Applying TF-IDF and distance metrics in NLP, implementing python document parsers
+                            (PyPDF2/docx2txt), text preprocessing pipelines (NLTK), and deployment on Streamlit Cloud.
+                        </p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">TF-IDF</span>
+                        <span class="tech-tag">Cosine Similarity</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">PyPDF2</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/piyushdhote" target="_blank" rel="noopener"
+                            class="btn btn-icon-only" aria-label="GitHub Repository"><i class="fab fa-github"></i>
+                            GitHub</a>
+                        <a href="https://streamlit.io" target="_blank" rel="noopener" class="btn btn-icon-only"
+                            aria-label="Streamlit Share"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Textify -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-domain-tag">Computer Vision / Full-stack</span>
+                        <span class="project-type-tag">Personal / Web</span>
+                    </div>
+                    <h3 class="project-title">Textify</h3>
+                    <p class="project-description">
+                        Developed a full-stack web application using Flask to extract text from user-uploaded images.
+                        Integrated Tesseract OCR engine via the pytesseract library for image text recognition, and
+                        optimized performance by pre-processing images with Pillow (resizing and grayscale conversion)
+                        to drastically reduce extraction speed. Deployed on PythonAnywhere.
+                    </p>
+                    <div class="project-learning">
+                        <h4><i class="fas fa-lightbulb"></i> What I Learned:</h4>
+                        <p>Interfacing Python web apps with external OCR binary engines, image pre-processing
+                            optimization using Pillow, and managing Flask application lifecycle on cloud PaaS.</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Tesseract OCR</span>
+                        <span class="tech-tag">pytesseract</span>
+                        <span class="tech-tag">Pillow</span>
+                        <span class="tech-tag">PythonAnywhere</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/piyushdhote" target="_blank" rel="noopener"
+                            class="btn btn-icon-only" aria-label="GitHub Repository"><i class="fab fa-github"></i>
+                            GitHub</a>
+                        <a href="https://www.pythonanywhere.com" target="_blank" rel="noopener"
+                            class="btn btn-icon-only" aria-label="PythonAnywhere"><i class="fas fa-globe"></i> Live
+                            App</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Courses Section -->
+    <section id="certifications" class="certifications-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// verified.credentials</p>
+            <h2 class="section-title">Certifications & Courses</h2>
+            <p class="section-subtitle">Verified external certifications illustrating structured specialization and
+                continuous upskilling.</p>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-database cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Getting Started With Enterprise in Data Science</h3>
+                    <p class="cert-issuer">Platform: IBM</p>
+                    <div class="cert-status-badge status-completed">Completed April 2025</div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-cloud cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
+                    <p class="cert-issuer">Platform: Oracle</p>
+                    <div class="cert-status-badge status-completed">Completed Sept 2025</div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-brain cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                    <p class="cert-issuer">Platform: Oracle</p>
+                    <div class="cert-status-badge status-completed">Completed Sept 2025</div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-server cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">MySQL HeatWave Implementation Certified Associate Rel 1</h3>
+                    <p class="cert-issuer">Platform: Oracle</p>
+                    <div class="cert-status-badge status-completed">Completed Sept 2025</div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-microchip cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Oracle Cloud Infrastructure 2025 Certified Data Science Professional</h3>
+                    <p class="cert-issuer">Platform: Oracle</p>
+                    <div class="cert-status-badge status-completed">Completed Sept 2025</div>
+                </div>
+            </div>
+
+            <div class="cert-note">
+                <p><i class="fas fa-award"></i> Verification hashes and repository source code available on request.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Socials Section -->
+    <section id="contact" class="contact-section section-padding scroll-animate">
+        <div class="container">
+            <p class="section-label">// reach.out</p>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <h3 class="contact-headline">Looking for my first opportunity in data science. If you're hiring or
+                        mentoring — let's talk.</h3>
+                    <p class="contact-subtext">
+                        I'm actively looking for entry-level data science roles, data analyst positions, and
+                        internships. I'm a quick learner, I ask good questions, and I show up ready to work. If you see
+                        potential here, I'd love to have a conversation.
+                    </p>
+
+                    <div class="status-banner">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Status: <strong>Actively Looking for Opportunities</strong> ✅</span>
+                    </div>
+
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="detail-text">Pune, Maharashtra, India</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:piyussh.dhote@gmail.com" class="detail-link">piyussh.dhote@gmail.com</a>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon"><i class="fas fa-phone-alt"></i></span>
+                            <a href="tel:+917822056304" class="detail-link">+91 7822056304</a>
+                        </div>
+                    </div>
+
+                    <!-- Working Social Channels -->
+                    <div class="social-channels">
+                        <a href="https://github.com/piyushdhote" target="_blank" rel="noopener" class="social-btn"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/piyushdhote" target="_blank" rel="noopener" class="social-btn"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/piyushdhote" target="_blank" rel="noopener" class="social-btn"
+                            aria-label="X / Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="mailto:piyussh.dhote@gmail.com" class="social-btn" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="contact-form-panel">
+                    <form class="contact-form" action="https://formsubmit.co/piyussh.dhote@gmail.com" method="POST">
+                        <!-- FormSubmit configurations -->
+                        <input type="hidden" name="_subject"
+                            value="New Portfolio Contact from Piyush Yashpal Dhote Portfolio!">
+                        <input type="hidden" name="_template" value="table">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="5"
+                                placeholder="Let's build something interesting..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">📩 Send Me an Email</button>
+                    </form>
+
+                    <div class="resume-download-box">
+                        <p>Need a physical copy of my credentials?</p>
+                        <a href="Resume (24-02-26).pdf" target="_blank" class="btn btn-secondary btn-block">
+                            <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Piyush Dhote. All Rights Reserved.</p>
+            <p class="footer-note">Built with <span class="heart">&hearts;</span> &middot; Pure HTML &amp; CSS &middot;
+                Hosted on Netlify</p>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript (Behavior, Animations & Canvas) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* ==========================================================================
+               1. Navigation & Hamburger Menu
+               ========================================================================== */
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Scroll Spy (Highlight active nav link based on scroll position)
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    // Offset navbar height (approx 75px)
+                    if (pageYOffset >= (sectionTop - 80)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+
+                // Add class to header on scroll
+                const header = document.querySelector('.header');
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+
+            /* ==========================================================================
+               2. Typewriter Effect
+               ========================================================================== */
+            const typewriterElement = document.getElementById('headline-typewriter');
+            const words = [
+                "Learning Data.",
+                "Building Things.",
+                "Ready to Contribute."
+            ];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typeSpeed = 100;
+
+            function type() {
+                const currentWord = words[wordIndex];
+                if (isDeleting) {
+                    typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                    typeSpeed = 40; // faster deletion
+                } else {
+                    typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                    typeSpeed = 120; // standard typing speed
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    typeSpeed = 2000; // pause at full word
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    typeSpeed = 500; // pause before typing next word
+                }
+
+                setTimeout(type, typeSpeed);
+            }
+
+            // Start typewriter
+            setTimeout(type, 800);
+
+
+            /* ==========================================================================
+               3. Floating Particles Background (Canvas)
+               ========================================================================== */
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Responsive sizing
+            let width = canvas.width = canvas.offsetWidth;
+            let height = canvas.height = canvas.offsetHeight;
+
+            window.addEventListener('resize', () => {
+                width = canvas.width = canvas.offsetWidth;
+                height = canvas.height = canvas.offsetHeight;
+            });
+
+            // Particles definition
+            const particles = [];
+            const particleCount = Math.min(60, Math.floor((width * height) / 15000)); // Dynamic node count based on screen size
+            const connectionDistance = 110;
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.4; // slow speeds for fluid motion
+                    this.vy = (Math.random() - 0.5) * 0.4;
+                    this.radius = Math.random() * 2 + 1.5;
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    // Boundary collision
+                    if (this.x < 0 || this.x > width) this.vx = -this.vx;
+                    if (this.y < 0 || this.y > height) this.vy = -this.vy;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(0, 212, 255, 0.7)'; // electric blue
+                    ctx.fill();
+                }
+            }
+
+            // Init particles
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+
+            // Check if user prefers reduced motion
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function animateParticles() {
+                if (prefersReducedMotion) {
+                    // Just draw static particles once, do not update or loop
+                    ctx.clearRect(0, 0, width, height);
+                    particles.forEach(p => p.draw());
+                    // Draw connections
+                    for (let i = 0; i < particles.length; i++) {
+                        for (let j = i + 1; j < particles.length; j++) {
+                            const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
+                            if (dist < connectionDistance) {
+                                ctx.strokeStyle = `rgba(124, 58, 237, ${0.1 * (1 - dist / connectionDistance)})`; // purple nodes
+                                ctx.lineWidth = 1;
+                                ctx.beginPath();
+                                ctx.moveTo(particles[i].x, particles[i].y);
+                                ctx.lineTo(particles[j].x, particles[j].y);
+                                ctx.stroke();
+                            }
+                        }
+                    }
+                    return;
+                }
+
+                ctx.clearRect(0, 0, width, height);
+
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+
+                // Connect particles in proximity (neural net look)
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
+                        if (dist < connectionDistance) {
+                            // Fade line opacity based on distance
+                            const opacity = 0.22 * (1 - dist / connectionDistance);
+                            ctx.strokeStyle = `rgba(124, 58, 237, ${opacity})`; // purple secondary accent
+                            ctx.lineWidth = 0.8;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                requestAnimationFrame(animateParticles);
+            }
+
+            // Start particle cycle
+            animateParticles();
+
+
+            /* ==========================================================================
+               4. Intersection Observer: Counters & Section Fade-Ins
+               ========================================================================== */
+
+            // Section Fades
+            const scrollAnimElements = document.querySelectorAll('.scroll-animate');
+            const scrollObserverOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const scrollObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // trigger animation only once
+                    }
+                });
+            }, scrollObserverOptions);
+
+            scrollAnimElements.forEach(el => {
+                scrollObserver.observe(el);
+            });
+
+
+
+            /* Dynamic Skills Tag Details */
+            const skillTags = document.querySelectorAll('.skill-tag');
+            skillTags.forEach(tag => {
+                const infoText = tag.getAttribute('data-level');
+                if (infoText) {
+                    // Create info tooltip
+                    const tooltip = document.createElement('span');
+                    tooltip.className = 'skill-tooltip';
+                    tooltip.textContent = infoText;
+                    tag.appendChild(tooltip);
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
